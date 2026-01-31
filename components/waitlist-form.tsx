@@ -185,14 +185,13 @@ export function WaitlistForm({ isOpen, onClose }: WaitlistFormProps) {
             {/* QR Code Section */}
             <div className="mb-6 flex flex-col items-center">
               <div className="mb-4 rounded-2xl border-2 border-primary/20 bg-background p-4 shadow-lg">
-                {/* Placeholder for QR Code - Replace with actual QR image */}
-                <div className="flex h-48 w-48 items-center justify-center rounded-xl bg-muted">
-                  <div className="text-center">
-                    <Smartphone className="mx-auto mb-2 h-12 w-12 text-primary" />
-                    <p className="text-xs text-muted-foreground">TnG QR Code</p>
-                    <p className="text-xs font-medium text-primary">RM 5.00</p>
-                  </div>
-                </div>
+                <Image
+                  src="/qr-code.png"
+                  alt="TnG QR Code"
+                  width={192}
+                  height={192}
+                  className="rounded-xl"
+                />
               </div>
 
               <p className="mb-2 text-center text-sm font-medium text-foreground">
@@ -203,7 +202,7 @@ export function WaitlistForm({ isOpen, onClose }: WaitlistFormProps) {
                 onClick={handleCopyNumber}
                 className="flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-foreground transition-colors hover:bg-accent/80"
               >
-                <span className="font-mono font-bold">012-345 6789</span>
+                <span className="font-mono font-bold">011 6791 0331</span>
                 {copied ? (
                   <Check className="h-4 w-4 text-green-600" />
                 ) : (
