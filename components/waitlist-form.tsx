@@ -3,6 +3,7 @@
 import React from "react"
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { ArrowRight, Shield, X, Copy, Check, Smartphone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
