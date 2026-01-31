@@ -18,7 +18,7 @@ export function HeroSection({ onJoinClick }: HeroSectionProps) {
         </div>
 
         {/* Main heading */}
-        <h1 className="mb-6 text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
+        <h1 className="mb-6 text-balance text-3xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
           Bridge the gap between
           <span className="text-primary"> university </span>
           and
