@@ -63,7 +63,7 @@ export function WaitlistForm({ isOpen, onClose }: WaitlistFormProps) {
               </h2>
               <p className="text-muted-foreground">
                 Reserve your early access spot with a fully refundable RM 5
-                deposit.
+                deposit. Limited to the first 50 applicants.
               </p>
             </div>
 

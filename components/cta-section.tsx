@@ -16,7 +16,7 @@ export function CTASection({ onJoinClick }: CTASectionProps) {
         </h2>
         <p className="mx-auto mb-8 max-w-xl text-primary-foreground/80">
           Join our founding community of students who are serious about bridging
-          the gap between university and industry.
+          the gap between university and industry. Limited to 50 founding members.
         </p>
 
         <Button

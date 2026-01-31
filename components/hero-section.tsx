@@ -14,7 +14,7 @@ export function HeroSection({ onJoinClick }: HeroSectionProps) {
         {/* Badge */}
         <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm text-accent-foreground">
           <Sparkles className="h-4 w-4" />
-          <span>Limited Early Access</span>
+          <span>Limited to first 50 students</span>
         </div>
 
         {/* Main heading */}
@@ -56,7 +56,7 @@ export function HeroSection({ onJoinClick }: HeroSectionProps) {
         </Button>
 
         <p className="mt-4 text-sm text-muted-foreground">
-          Fully refundable. Cancel anytime.
+          Fully refundable. Cancel anytime. Only 50 spots available.
         </p>
       </div>
     </section>
