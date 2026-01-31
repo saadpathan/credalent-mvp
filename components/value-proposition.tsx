@@ -42,7 +42,7 @@ export function ValueProposition() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {benefits.map((benefit) => (
             <Card
               key={benefit.title}
