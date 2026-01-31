@@ -4,10 +4,11 @@ import React from "react"
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { ArrowRight, Shield, X, Copy, Check, Smartphone } from 'lucide-react'
+import { ArrowRight, Shield, X, Copy, Check, Smartphone, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { supabase } from '@/lib/supabase'
 
 interface WaitlistFormProps {
   isOpen: boolean
@@ -145,9 +146,23 @@ export function WaitlistForm({ isOpen, onClose }: WaitlistFormProps) {
                 />
               </div>
 
-              <Button type="submit" className="group w-full" size="lg">
-                Continue to Payment — RM 5
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Button
+                type="submit"
+                className="group w-full"
+                size="lg"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Processing...
+                  </>
+                ) : (
+                  <>
+                    Continue to Payment — RM 5
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </>
+                )}
               </Button>
 
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
